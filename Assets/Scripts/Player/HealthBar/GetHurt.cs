@@ -5,7 +5,7 @@ using UnityEngine;
 public class GetHurt : MonoBehaviour
 {
     public int maxHealth = 100;
-    public int currentHealth;
+    public static int currentHealth;
 
     public HealthBarSlide bar;
     // Start is called before the first frame update

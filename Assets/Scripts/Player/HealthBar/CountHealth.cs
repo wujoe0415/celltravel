@@ -17,6 +17,6 @@ public class CountHealth : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        counting.text = get.currentHealth.ToString() + " / " + get.maxHealth.ToString(); 
+        counting.text = GetHurt.currentHealth.ToString() + " / " + get.maxHealth.ToString(); 
     }
 }
