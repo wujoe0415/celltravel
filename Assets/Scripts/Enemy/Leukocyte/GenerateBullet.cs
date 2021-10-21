@@ -1,4 +1,4 @@
-using System.Collections;
+//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
@@ -52,6 +52,7 @@ public class GenerateBullet : MonoBehaviour
 
         NativeArray<Entity> Bullets = new NativeArray<Entity>(totalAmount,Allocator.TempJob);
         manager.Instantiate(bulletEntityPrefab, Bullets);
+        Debug.Log(bulletEntityPrefab);
 
         for(int y = min; y < max ; y++ )
         {
